@@ -14,7 +14,7 @@ long getWays(long n, vector <long>& c){
     sort(c.begin(), c.end());
     
     //create 2D vector table for bottom-up DP
-    vector<vector<long> > table(c.size() + 1, vector<long>(n + 1));
+    vector<vector<long> > table(c.size(), vector<long>(n + 1));
 
     //initialize the first row
     for (int col = 0; col <= n; col++)
